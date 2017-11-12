@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 import {Button, Well, ListGroup, ListGroupItem,
   ButtonToolbar, Navbar, FormGroup, FormControl, InputGroup,
   DropdownButton, MenuItem} from 'react-bootstrap'
+import Device from './device'
 
 class Devices extends Component{
 
@@ -22,7 +23,7 @@ class Devices extends Component{
       <ListGroup style={listStyle}>
         <ListGroupItem style={{borderRadius: 0, height: '10%'}}>
         <div style={{verticalAlign: 'middle'}}>
-          <div style={{float:'left'}}><h4>Recipes</h4></div>
+          <div style={{float:'left'}}><h4>Devices</h4></div>
           <div style={{float:'right'}}>
           <ButtonToolbar>
             <Button bsSize="xsmall">DEVICES</Button>
@@ -45,8 +46,11 @@ class Devices extends Component{
     </Navbar.Form>
     </Navbar>
         </ListGroupItem>
-        <ListGroupItem style={{borderRadius: 0, height: '68%'}}></ListGroupItem>
-        <ListGroupItem style={{borderRadius: 0, height: '5%'}}>9 Devices</ListGroupItem>
+        <ListGroupItem style={{borderRadius: 0, height: '68%'}}>
+          <Device />
+          <Device />
+        </ListGroupItem>
+        <ListGroupItem style={{borderRadius: 0, height: '5%'}}>0 Devices</ListGroupItem>
       </ListGroup>
     )
   }
