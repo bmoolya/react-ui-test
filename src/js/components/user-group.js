@@ -6,7 +6,7 @@ class UserGroup extends React.Component {
   constructor(...args) {
     super(...args);
     this.state = {
-      open: true
+      open: this.props.colapsed
     };
   }
 
@@ -14,12 +14,16 @@ class UserGroup extends React.Component {
     console.log('name:'+this.props.name)
     console.log('colapsed:'+this.props.colapsed)
     const listItemStyle = {
-      borderRadius: 0, border: 0, margin:0, padding: 5
+      borderRadius: 0, border: 0, margin:0, padding: 0
     }
+    let open = this.state.open;
+    //this.setState({open})
+    let span = open ? <span className="glyphicon glyphicon-minus" /> :
+      <span className="glyphicon glyphicon-plus" />
     return (
       <div>
-        <Button onClick={() => this.setState({ open: !this.state.open })}>
-          <span className="glyphicon glyphicon-plus"></span>
+        <Button bsStyle="link" onClick={() => this.setState({ open: !this.state.open })}>
+          {span}
         </Button><span>{this.props.name}</span>
         <Panel collapsible expanded={this.state.open} style={{margin:0, padding: 0}}>
         <ListGroup style={listItemStyle}>
