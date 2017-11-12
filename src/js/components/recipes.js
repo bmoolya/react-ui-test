@@ -18,7 +18,13 @@ class Recipes extends Component{
     const listItemStyle = {
       borderRadius: 0, border: 0
     }
-    let spanItem = (<span className="glyphicon glyphicon-search">MCK Seperation - Acme</span>)
+    let listHdr =
+      (<div className="row">
+        <span className="glyphicon glyphicon-th-list"></span>
+        <div style={{float:'right', paddingRight:250}}>
+        <p>MCK Seperation - Acme</p>
+        </div>
+      </div>)
     return (
       <ListGroup style={listStyle}>
         <ListGroupItem style={{borderRadius: 0, height: '10%'}}>
@@ -34,22 +40,20 @@ class Recipes extends Component{
         </ListGroupItem>
         <ListGroupItem style={{borderRadius: 0, height: '9%', padding: 0, margin: 0}}>
         <Navbar style={{backgroundColor: 'white', borderRadius: 0, boxShadow: 'none',
-        padding: 0, margin: 0,border: 'none'}}>
-    <Navbar.Form>
-      <FormGroup >
-        <InputGroup>
-          <InputGroup.Addon><span className="glyphicon glyphicon-search"></span></InputGroup.Addon>
-          <FormControl type="text" placeholder="Search" />
-        </InputGroup>
-        </FormGroup>
-
-    </Navbar.Form>
-    </Navbar>
+            padding: 0, margin: 0,border: 'none'}}>
+          <Navbar.Form>
+            <FormGroup >
+              <InputGroup>
+                <InputGroup.Addon><span className="glyphicon glyphicon-search"></span></InputGroup.Addon>
+                <FormControl type="text" placeholder="Search" />
+              </InputGroup>
+              </FormGroup>
+          </Navbar.Form>
+        </Navbar>
         </ListGroupItem>
         <ListGroupItem style={{borderRadius: 0, height: '68%'}}>
         <ListGroup style={listItemStyle}>
-
-             <ListGroupItem header="MCK Seperation - Acme" href="#" style={listItemStyle}>
+             <ListGroupItem header="MCK Seperation - Acme" style={listItemStyle}>
              <div style={{verticalAlign: 'middle'}}>
                <div style={{float:'left'}}></div>
                <div style={{float:'right'}}>
@@ -58,7 +62,7 @@ class Recipes extends Component{
              </div>
              XM04</ListGroupItem>
 
-             <ListGroupItem header="MCK Seperation - Acme" href="#" style={listItemStyle}>
+             <ListGroupItem header="MCK Seperation - Acme" style={listItemStyle}>
              <div style={{verticalAlign: 'middle'}}>
                <div style={{float:'left'}}></div>
                <div style={{float:'right'}}>
@@ -67,7 +71,7 @@ class Recipes extends Component{
              </div>
              XM04</ListGroupItem>
 
-             <ListGroupItem header="MCK Seperation - Acme" href="#" style={listItemStyle}>
+             <ListGroupItem header="MCK Seperation - Acme"  style={listItemStyle}>
              <div style={{verticalAlign: 'middle'}}>
                <div style={{float:'left'}}></div>
                <div style={{float:'right'}}>
@@ -76,7 +80,7 @@ class Recipes extends Component{
              </div>
              XM04</ListGroupItem>
 
-             <ListGroupItem header="MCK Seperation - Acme" href="#" style={listItemStyle}>
+             <ListGroupItem header="MCK Seperation - Acme"  style={listItemStyle}>
              <div style={{verticalAlign: 'middle'}}>
                <div style={{float:'left'}}></div>
                <div style={{float:'right'}}>
@@ -85,7 +89,7 @@ class Recipes extends Component{
              </div>
              XM04</ListGroupItem>
 
-             <ListGroupItem header="MCK Seperation - Acme" href="#" style={listItemStyle}>
+             <ListGroupItem header="MCK Seperation - Acme" style={listItemStyle}>
              <div style={{verticalAlign: 'middle'}}>
                <div style={{float:'left'}}></div>
                <div style={{float:'right'}}>
