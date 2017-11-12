@@ -11,14 +11,15 @@ class MainMenuHeader extends Component{
     }
     return (
     <Navbar fluid={true} style={styles} >
-      <Nav activeKey={4}>
+      <Nav activeKey={4} >
         <NavItem eventKey={1} href="#">Home</NavItem>
         <NavItem eventKey={2} href="#">Recipe Editor</NavItem>
         <NavItem eventKey={3} href="#">Reporting</NavItem>
         <NavItem eventKey={4} href="#">Admin</NavItem>
       </Nav>
       <Nav pullRight>
-        <NavItem eventKey={1} href="#">jdoe<br/>ADMINISTRATOR</NavItem>
+        <span style={{fontFamily: 'Arial', fontStyle: 'normal', fontSize: 12, color: 'grey'}}>
+          <b>jdoe</b><br/>ADMINISTRATOR</span>
       </Nav>
     </Navbar>
     )
