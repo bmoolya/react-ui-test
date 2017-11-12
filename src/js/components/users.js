@@ -34,23 +34,22 @@ class Users extends Component{
         </ListGroupItem>
         <ListGroupItem style={{borderRadius: 0, height: '9%', padding: 0, margin: 0}}>
         <Navbar style={{backgroundColor: 'white', borderRadius: 0, boxShadow: 'none',
-        padding: 0, margin: 0,border: 'none'}}>
-    <Navbar.Form>
-      <FormGroup >
-        <InputGroup>
-          <InputGroup.Addon><span className="glyphicon glyphicon-search"></span></InputGroup.Addon>
-          <FormControl type="text" placeholder="Search" />
-        </InputGroup>
-        </FormGroup>
-
-    </Navbar.Form>
-    </Navbar>
+            padding: 0, margin: 0,border: 'none'}}>
+          <Navbar.Form>
+            <FormGroup >
+              <InputGroup>
+                <InputGroup.Addon><span className="glyphicon glyphicon-search"></span></InputGroup.Addon>
+                <FormControl type="text" placeholder="Search" />
+              </InputGroup>
+            </FormGroup>
+          </Navbar.Form>
+        </Navbar>
         </ListGroupItem>
         <ListGroupItem style={{borderRadius: 0, height: '68%'}}>
           <UserGroup name='User Group A' colapsed={true}/>
-          <UserGroup name='User Group B' colapsed={false}/>
+          <UserGroup name='User Group B' colapsed={true}/>
         </ListGroupItem>
-        <ListGroupItem style={{borderRadius: 0, height: '5%'}}>10 Users</ListGroupItem>
+        <ListGroupItem style={{borderRadius: 0, height: '5%'}}>2 Users</ListGroupItem>
       </ListGroup>
     )
   }
